@@ -4,6 +4,9 @@ Mill plugin for Scala TSI, ported from [scala-tsi](https://github.com/scala-tsi/
 ## Installation
 
 ```scala
+// build.sc
+import $ivy.`io.github.hoangmaihuy::mill-scala-tsi::<latest-version>`
+
 import io.github.hoangmaihuy.scalatsi._
 
 object example extends ScalaModule with ScalaTsiModule {
