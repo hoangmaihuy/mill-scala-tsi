@@ -20,7 +20,7 @@ def millVersion = T {
 
 object Versions {
   lazy val scala = "2.13.12"
-  lazy val twirl = "1.6.3"
+  lazy val twirl = "1.6.4"
 }
 
 object `mill-scala-tsi` extends ScalaModule with TwirlModule with CiReleaseModule {
