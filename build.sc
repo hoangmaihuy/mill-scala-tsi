@@ -20,7 +20,7 @@ def millVersion = T {
 
 object Versions {
   lazy val scala = "2.13.12"
-  lazy val twirl = "1.6.4"
+  lazy val twirl = "2.0.3"
 }
 
 object `mill-scala-tsi` extends ScalaModule with TwirlModule with CiReleaseModule {
@@ -61,7 +61,7 @@ object `mill-scala-tsi` extends ScalaModule with TwirlModule with CiReleaseModul
   )
 
   override def ivyDeps = super.ivyDeps() ++ Agg(
-    ivy"com.typesafe.play::twirl-api:${Versions.twirl}"
+    ivy"org.playframework.twirl::twirl-api:${Versions.twirl}"
   )
 
 }
